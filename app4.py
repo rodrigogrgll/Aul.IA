@@ -193,17 +193,14 @@ with col2:
 with col1:
     st.subheader("Paso 2: Plan de Foco Estratégico")
 
-    # Este 'st.empty()' es un truco. Es una "caja vacía"
-    output_plan_foco = st.empty()
-
-    # --- (CORRECCIÓN 2) ---
-    # Revisamos la "memoria" ANTES de decidir qué mostrar
+        # Revisamos la "memoria" y dibujamos la caja apropiada
+        # Ya no usamos st.empty()
     if st.session_state.plan_de_foco:
-        # Si hay un plan guardado, lo mostramos (usamos .success para que resalte)
-        output_plan_foco.success(st.session_state.plan_de_foco) 
+        # Si hay un plan guardado, dibujamos una caja de éxito
+        st.success(st.session_state.plan_de_foco) 
     else:
-        # Si no, mostramos el mensaje por defecto
-        output_plan_foco.info("El Plan de Foco generado por la IA aparecerá aquí...")
+        # Si no, dibujamos la caja de información por defecto
+        st.info("El Plan de Foco generado por la IA aparecerá aquí...")
 
 
 # --- ZONA DE BOTONES (Acción 2, Cambios 4, 6, 7) ---
@@ -235,31 +232,31 @@ with col_btn1:
                 •   {SB} (El/los Saberes Básicos curriculares)
                 •   {TEMA} (El contenido concreto o pretexto)
                 •   {CURSO} (El grupo de destino)
-                Instrucción de Tarea (Crítica): Tu única tarea es generar un Plan de Foco Estratégico y una Esencia Competencial para una futura Situación de Aprendizaje (SA). NO generes la SA. Tu salida debe ser exclusivamente el plan en el formato JSON especificado.
-                Tarea: Genera el "Foco Estratégico" y la "Esencia Competencial". Sigue rigurosamente estos 5 pasos:
+                Instrucción de Tarea (Crítica): Tu tarea es generar un Plan Estratégico y una Esencia Competencial. Tu salida debe tener dos partes: (1) Un resumen en texto legible para el profesor, y (2) La Esencia Competencial (del Paso 5) como una cadena de texto para el sistema.
+                Tarea: Sigue rigurosamente estos 5 pasos para generar el contenido del plan:
                 Paso 1 (Análisis Jerárquico por Regla Gramatical): (Cortafuegos: Lee únicamente la {CE} para este paso. IGNORA el {CEv} y el {SB} por completo en esta sección). Aplica la siguiente regla gramatical estricta para clasificar los conceptos de la {CE}:
-                •   Eje Competencial (QUÉ): Lista aquí los verbos de acción principales, los conceptos centrales y el propósito/finalidad. (PISTA: Verbos en infinitivo, sus objetos directos y las cláusulas finales tipo "para...").
-                •   Herramientas de Análisis (CÓMO): Lista aquí los conceptos/métodos. (PISTA: Acciones en gerundio).
+                Eje Competencial (QUÉ): Lista aquí los verbos de acción principales, los conceptos centrales y el propósito/finalidad. (PISTA: Verbos en infinitivo, sus objetos directos y las cláusulas finales tipo "para...").
+                Herramientas de Análisis (CÓMO): Lista aquí los conceptos/métodos. (PISTA: Acciones en gerundio).
                 Paso 2 (Análisis de Adecuación al CURSO): Ahora, compara la lista completa de conceptos del Paso 1 (Eje y Herramientas) con el nivel madurativo del {CURSO}. Evalúa explícitamente:
-                •   ¿Qué conceptos son directamente aplicables?
-                •   ¿Qué conceptos presentan una alta complejidad cognitiva y requerirán una adaptación?
+                ¿Qué conceptos son directamente aplicables?
+                ¿Qué conceptos presentan una alta complejidad cognitiva y requerirán una adaptación?
                 Paso 3 (Declaración del Foco Realista): Basándote en el análisis de adecuación del Paso 2, declara el foco realista para esta SA.
-                •   Foco en el Eje (QUÉ): Declara cómo se abordará el Eje (incluyendo el propósito/finalidad).
-                •   Foco en las Herramientas (CÓMO): Selecciona las "Herramientas de Análisis" más relevantes para el {TEMA} y el {CURSO}.
-                Paso 4 (Declaración de Renuncia Estratégica): Basándote en los pasos 2 y 3, declara explícitamente qué conceptos (del "Eje" o de las "Herramientas") quedan definitivamente fuera de foco. Justifica esta renuncia basándte en tu análisis del Paso 2.
-                
+                Foco en el Eje (QUÉ): Declara cómo se abordará el Eje (incluyendo el propósito/finalidad).
+                Foco en las Herramientas (CÓMO): Selecciona las "Herramientas de Análisis" más relevantes para el {TEMA} y el {CURSO}.
+                Paso 4 (Declaración de Renuncia Estratégica): Basándote en los pasos 2 y 3, declara explícitamente qué conceptos (del "Eje" o de las "Herramientas") quedan definitivamente fuera de foco. Justifica esta renuncia basándote en tu análisis del Paso 2.
                 Paso 5 (Síntesis de Esencia Competencial - {{EsCE}}): Tu tarea es generar la Esencia Competencial ({{EsCE}}). Sigue estas reglas estrictas:
-                •   Cortafuegos de Fuentes (Crítico): Para este paso, debes basarte única y exclusivamente en el texto que tú mismo has generado en el "paso3_focoRealista" (tanto el focoEje_QUE como el focoHerramientas_COMO).
-                •   Cortafuegos de Omisión (Crítico): Tienes explícitamente prohibido usar la {CE} original, el {CEv} o el texto del "paso4_renunciaEstrategica" para construir esta esencia.
-                •   Instrucción de Formato (Regla Gramatical): Debes sintetizar los elementos del "Paso 3" en un único párrafo de texto que siga la misma estructura gramatical de una Competencia Específica, respetando esta secuencia obligatoria:
-                1.  Empieza con los verbos en Infinitivo y conceptos del focoEje_QUE.
-                2.  Continúa con las acciones en Gerundio del focoHerramientas_COMO.
-                3.  Concluye con el propósito/finalidad (ej. "para explicar y valorar...") extraído del focoEje_QUE.
-                ________________________________________
-                Formato de Salida Obligatorio: Tienes que responder los dos siguientes apartados
-                El primero: Tiene que estar dirigido al docente, puede incluir un texto introductorio breve. 
-                A esta parte de la respuesta la llamaremos [Respuesta Docente]
-                Tu segunda respuesta [Respuesta JSON] debe ser únicamente un objeto JSON válido. No incluyas ningún texto introductorio, explicaciones, ni la palabra "json". La estructura del JSON debe seguir este esquema:
+                Cortafuegos de Fuentes (Crítico): Para este paso, debes basarte única y exclusivamente en el texto que tú mismo has generado en el "paso3_focoRealista".
+                Cortafuegos de Omisión (Crítico): Tienes explícitamente prohibido usar la {CE} original, el {CEv} o el texto del "paso4_renunciaEstrategica" para construir esta esencia.
+                Instrucción de Formato (Regla Gramatical): Debes sintetizar los elementos del "Paso 3" en un único párrafo de texto que siga la misma estructura gramatical de una Competencia Específica (Infinitivo -> Gerundio -> Finalidad).
+
+                Formato de Salida Obligatorio: Tu respuesta debe tener dos partes separadas por un delimitador único. Sigue este formato rigurosamente:
+                PARTE 1: Resumen para el Profesor (Texto) Genera aquí un resumen en prosa (usando Markdown para títulos y listas) destinado al profesor. Este resumen debe presentar de forma clara los resultados de tu análisis (Pasos 2, 3 y 4) para que el docente pueda validarlo.
+                Debe incluir un título (ej. ### 💡 Propuesta de Foco Estratégico).
+                Debe presentar el Análisis de Adecuación (del Paso 2).
+                Debe presentar el Foco Realista (del Paso 3).
+                Debe presentar la Renuncia Estratégica (del Paso 4).
+                (No incluyas el Paso 1 ni el 5 en este resumen, ya que son abstractos o técnicos).
+                PARTE 2: Tiene que contener la misma información que la PARTE 1 pero siendo un objeto JSON válido. El objeto JSON debe seguir este esquema:
                 JSON
                 {{
                 "focoEstrategico": {{
@@ -288,8 +285,7 @@ with col_btn1:
                     }}
                 }},
                 "esenciaCompetencial_EsCE": "El texto de la Competencia Específica reconstruido según las reglas del Paso 5."
-                }}
-                """
+                }}"""
 
                 # 4. Llamar a la IA (usando nuestra nueva función)
                 respuesta_ia = llamar_a_gemini(prompt_temporal_plan_foco)
