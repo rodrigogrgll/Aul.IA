@@ -1,5 +1,14 @@
 # "import" significa: "Carga la caja de herramientas de Streamlit y llámala 'st'"
 import streamlit as st
+import google.generativeai as genai # La librería que ya instalaste
+
+# Cargar la API Key desde los secretos
+try:
+    genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
+except FileNotFoundError:
+    st.error("No se encontró el archivo secrets.toml. Asegúrate de crearlo en la carpeta .streamlit.")
+except KeyError:
+    st.error("No se encontró la GOOGLE_API_KEY en secrets.toml. Asegúrate de añadirla.")
 
 # --- CONFIGURACIÓN DE PÁGINA ---
 # st.set_page_config() pone la página en modo "ancho" (wide)
