@@ -1,0 +1,35 @@
+### **1. Título de la Situación de Aprendizaje**
+
+**Agentes del Cambio Energético: Trazando el Nuevo Mapa de Europa**
+
+### **2. Enfoque Curricular**
+
+*   **Saberes Básicos Movilizados:** Los límites geográficos de Europa: conocimiento y localización en el mapa. Países europeos y sus capitales.
+*   **Conexiones Curriculares:** Esta SA se conecta de forma secundaria con el área de **Ciencias de la Naturaleza** (fuentes de energía, impacto ambiental), **Lengua Castellana y Literatura** (comunicación oral y escrita para la presentación del producto final) y fomenta el desarrollo de la **Competencia Digital** (investigación guiada) y la **Competencia Ciudadana** (conciencia de responsabilidad global).
+
+### **3. Objetivos Competenciales (OC)**
+
+*   **OC 1:** Identificar en un mapa de Europa las principales rutas energéticas, distinguiendo entre las basadas en carbón y las renovables, para explicar las causas y consecuencias de su uso analizando su impacto ambiental y social básico en los países localizados en dichas rutas.
+*   **OC 2:** Proponer un decálogo de hábitos personales y soluciones sencillas para fomentar el cuidado del planeta, justificando cómo cada acción contribuye a mitigar las consecuencias negativas del uso de energías no renovables en Europa.
+
+### **4. Situación de Aprendizaje (SA)**
+
+*   **Contexto y Desafío:** La Agencia Europea de Medio Ambiente os ha reclutado como "Agentes del Cambio Energético" junior. Vuestra misión es crucial: Europa está en una encrucijada. Durante décadas, ha dependido de rutas energéticas basadas en el carbón, que viajan desde grandes minas en países como Polonia o Alemania hasta las ciudades. Pero esto está dañando nuestro planeta y la salud de las personas. Al mismo tiempo, están surgiendo nuevas y emocionantes rutas de energía limpia (solar desde España, eólica desde Dinamarca...). El desafío es doble: primero, entender y visualizar estas rutas en un mapa para comprender el problema y la solución; segundo, crear una guía para que otros niños y niñas sepan cómo pueden ayudar desde casa. ¿Aceptáis la misión de trazar el nuevo mapa energético de Europa y convertiros en guías para un futuro más limpio?
+
+*   **Producto Final / Actuación:** Por equipos, crear un **"Kit del Agente del Cambio Energético"**. Este kit deberá contener dos elementos clave que se presentarán al resto de la clase:
+    1.  **Mapa de las Rutas Energéticas:** Un mapa físico de Europa donde, usando lanas de colores, chinchetas y pequeñas leyendas, se tracen y expliquen dos rutas: una ruta tradicional de carbón (p. ej., desde una mina en Polonia hasta una ciudad industrial) y una ruta de energía renovable (p. ej., desde un parque eólico en el Mar del Norte hasta los Países Bajos).
+    2.  **Decálogo Visual de Soluciones:** Una cartulina o presentación digital con un decálogo de 10 acciones sencillas y cotidianas para ahorrar energía. Cada acción debe ir acompañada de un dibujo o imagen y una breve frase que explique por qué esa acción ayuda al planeta y a las personas de Europa.
+
+*   **Secuenciación de Tareas:**
+    *   **Fase 1: Activación (Misión Aceptada):** Presentación del desafío. Diálogo sobre qué sabemos de la electricidad, de dónde viene y cómo afecta a nuestro entorno. Localización inicial en un mapa de Europa de nuestro propio país y otros países clave.
+    *   **Fase 2: Investigación (Rastreando las Rutas):** En equipos colaborativos, se entregan "dossiers de agente secreto" con información sencilla (textos cortos, imágenes, datos curiosos) sobre una ruta de carbón y una ruta renovable. Los equipos deben localizar los países y capitales implicados en el mapa, e identificar los impactos positivos y negativos (ambientales y sociales básicos) de cada una.
+    *   **Fase 3: Creación (Construyendo el Kit):** Los equipos diseñan y elaboran su producto final: el mapa con las lanas y leyendas, y el decálogo visual. Se preparan para una breve exposición oral donde expliquen sus hallazgos.
+    *   **Fase 4: Exposición y Acción (Compartimos la Misión):** Cada equipo presenta su "Kit del Agente del Cambio Energético" al resto de la clase, explicando las rutas en su mapa y justificando las acciones de su decálogo.
+    *   **Fase 5: Metacognición (Diario del Agente):** De forma individual, el alumnado completa una ficha de reflexión: ¿Qué es lo más sorprendente que he aprendido? ¿Qué parte de la misión me resultó más difícil y cómo la superé? ¿Cuál de las 10 acciones del decálogo me comprometo a empezar a hacer hoy mismo?
+
+### **5. Rúbrica de Evaluación**
+
+| Objetivo Competencial (OC) | Nivel 1: En inicio | Nivel 2: En desarrollo | Nivel 3: Avanzado | Nivel 4: Experto |
+| :--- | :--- | :--- | :--- | :--- |
+| **OC 1:** Identificar en un mapa de Europa las principales rutas energéticas, distinguiendo entre las basadas en carbón y las renovables, para explicar las causas y consecuencias de su uso analizando su impacto ambiental y social básico en los países localizados en dichas rutas. | Localiza con dificultad los países en el mapa y no distingue entre las rutas energéticas, o confunde sus causas y consecuencias. | Localiza los países y traza correctamente al menos una ruta, pero explica sus causas y consecuencias de forma muy simple o solo desde una perspectiva (p. ej., solo la ambiental), sin conectar claramente con los países implicados. | Localiza correctamente los países, traza ambas rutas diferenciándolas y explica de forma clara las causas y consecuencias de su uso, mencionando tanto el impacto ambiental como el social básico para los países de la ruta. | Además de lo anterior, utiliza vocabulario específico (p. ej., "emisiones", "sostenible") y establece conexiones lógicas y fluidas entre el tipo de energía, el impacto en un país concreto y la vida de sus habitantes durante su explicación. |
+| **OC 2:** Proponer un decálogo de hábitos personales y soluciones sencillas para fomentar el cuidado del planeta, justificando cómo cada acción contribuye a mitigar las consecuencias negativas del uso de energías no renovables en Europa. | Propone acciones genéricas (p. ej., "ser bueno con el planeta") sin concretar hábitos o sin justificar su relación con el ahorro energético. | Elabora un decálogo con acciones pertinentes, pero la justificación de por qué ayudan a mitigar las consecuencias es vaga ("es bueno para el medio ambiente") o incompleta. | Elabora un decálogo con 10 acciones claras y factibles, justificando de forma sencilla y correcta cómo cada una contribuye a reducir el impacto negativo de las energías no renovables estudiadas (p. ej., "apagar la luz ahorra electricidad y así las centrales de carbón contaminan menos"). | Además de lo anterior, el decálogo es visualmente claro y persuasivo, y las justificaciones demuestran una comprensión personal del problema, conectando sus propias acciones cotidianas con un beneficio global y tangible para las personas y el entorno en Europa. |
